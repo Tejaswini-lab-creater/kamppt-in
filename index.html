@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="KAM PPT — your AI-powered study companion. Explain, practice, plan, and focus.">
+    <title>KAM PPT – Smarter Tomorrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#home"><span class="brand-symbol">K</span><span><b>KAM PPT</b><small>SMARTER TOMORROW</small></span></a>
+        <nav class="navigation" aria-label="Study tools">
+          <a href="#home" data-page="home">🏠 <span>Home</span></a>
+          <a href="#explain" data-page="explain">💡 <span>Explain</span></a>
+          <a href="#quiz" data-page="quiz">📝 <span>Quiz</span></a>
+          <a href="#summarize" data-page="summarize">📄 <span>Summarize</span></a>
+          <a href="#flashcards" data-page="flashcards">🃏 <span>Flashcards</span></a>
+          <a href="#tutor" data-page="tutor">🤖 <span>AI Tutor</span></a>
+          <a href="#timetable" data-page="timetable">🗓️ <span>Timetable</span></a>
+          <a href="#timer" data-page="timer">⏱️ <span>Timer</span></a>
+          <a href="#performance" data-page="performance">📊 <span>Performance</span></a>
+          <a href="#history" data-page="history">🕘 <span>History</span></a>
+          <a href="#settings" data-page="settings">⚙️ <span>Settings</span></a>
+        </nav>
+        <div class="sidebar-note"><span>✦</span><b>Smarter tomorrow</b><small>One little step today is progress.</small></div>
+        <div class="profile"><span class="avatar">S</span><span><b>Student</b><small>Your study space</small></span></div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <button class="icon-button mobile-menu" id="menu-toggle" aria-label="Open menu">☰</button>
+          <div class="page-label"><span>Workspace</span><i>/</i><b id="page-name">Home</b></div>
+          <div class="top-controls"><label class="language" title="Study language">文 <select id="language-select" aria-label="Study language">
+            <option>English</option><option>Hindi</option><option>Telugu</option><option>Tamil</option><option>Kannada</option><option>Malayalam</option><option>Marathi</option><option>Bengali</option><option>Spanish</option><option>French</option><option>German</option><option>Arabic</option><option>Chinese</option><option>Japanese</option>
+          </select></label><button class="icon-button" id="theme-toggle" aria-label="Toggle theme">☼</button><span class="avatar">S</span></div>
+        </header>
+        <section class="content" id="content" aria-live="polite"></section>
+        <footer class="footer">Made for curious minds <span>✦</span></footer>
+      </main>
+    </div>
+    <div class="toasts" id="toasts" aria-live="polite"></div>
+  </body>
+</html>
